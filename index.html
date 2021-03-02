@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="/index.css" />
+    </head>
+
+    <body>
+        <header></header>
+        <main>
+
+            <div id="form_header">
+                <h1>freeCodeCamp Survey Form</h1>
+                <p>Thank you for taking the time to help us improve the platform</p>
+            </div>
+
+            <form>
+                <div>
+                    <label for="input_name">Name</label>
+                    <input id="input_name" type="text" placeholder="Enter your name" name="name" />
+                </div>
+
+                <div>
+                    <label for="input_email">Email</label>
+                    <input id="input_email" type="text" placeholder="Enter your Email" name="email" />
+                </div>
+
+                <div>
+                    <label for="input_age">Age <span>(optional)</span></label>
+                    <input id="input_age" type="number" min="10" max="99" placeholder="Age" name="age" />
+                </div>
+
+                <div>
+                    <label for="roles">Which option best describes your current role?</label>
+                    <select id="roles" name="roles">
+                        <optgroup label="Select current role">
+                            <option>Student</option>
+                            <option>Full time Job</option>
+                            <option>Full time Learner</option>
+                            <option>Prefer not to say</option>
+                            <option>Other</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="input_checkbox_recommend">Would you recommend freeCodeCamp to a friend?</label>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Male</label><br />
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label><br />
+                    <input type="radio" id="other" name="gender" value="other" />
+                    <label for="other">Other</label>
+                </div>
+
+                <div>
+                    <label>
+                        What would you line to see improved?
+                        <span>(Check all that apply)</span>
+                    </label>
+
+                    <label for="front_end">Front-end Projects</label>
+                    <input type="checkbox" name="front_end" id="front_end" />
+
+                    <label for="back_end">Back-end Projects</label>
+                    <input type="checkbox" name="back_end" id="back_end" />
+
+                    <label for="data_visualization">Data Visualization</label>
+                    <input type="checkbox" name="data_visualization" id="data_visualization" />
+                    <label for="challenges">Challenges</label>
+                    <input type="checkbox" name="challenges" id="challenges" />
+                </div>
+
+                <div>
+                    <label for="comment">Any comments or suggestions?</label>
+                    <input type="text" name="comment" id="comment" />
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+
+        <footer></footer>
+    </body>
+
+</html>

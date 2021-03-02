@@ -1,0 +1,5 @@
+{
+    "prettier.arrowParens": "avoid",
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true
+}
